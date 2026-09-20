@@ -28,8 +28,8 @@ TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TG_CHAT = os.environ.get("TELEGRAM_CHAT_ID", "")
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "")
 # Free-tier model names change over time; override via the GEMINI_MODEL env var if needed.
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
-MIN_LEVEL = os.environ.get("MIN_LEVEL", "HIGH").upper()
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash lite")
+MIN_LEVEL = os.environ.get("MIN_LEVEL", "Low").upper()
 MAX_AGE_H = float(os.environ.get("MAX_AGE_HOURS", "4"))
 MAX_LLM_CLUSTERS = int(os.environ.get("MAX_LLM_CLUSTERS", "10"))
 FF_CURRENCIES = {c.strip().upper() for c in os.environ.get("FF_CURRENCIES", "USD").split(",") if c.strip()}
